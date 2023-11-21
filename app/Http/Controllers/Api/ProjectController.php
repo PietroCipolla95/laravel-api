@@ -11,7 +11,24 @@ class ProjectController extends Controller
     public function projects()
     {
         return response()->json([
-            'projects' => Project::with('technologies', 'type')->paginate(5)
+            'projects' => Project::with('technologies', 'type')->paginate(6)
         ]);
+    }
+
+    public function singleProject($slug)
+    {
+        $single_project = Project::with('technologies', 'type')->where('slug', $slug)->first();
+
+        if ($single_project) {
+            return response()->json([
+                'response' => true,
+                'single_project' => $single_project,
+            ]);
+        } else {
+            return response()->json()([
+                'response' => false,
+                'single_project' => 'no project found'
+            ]);
+        }
     }
 }
