@@ -21,13 +21,13 @@ class TechnologyController extends Controller
         $technology = Technology::with('posts')->where('id', $id)->first();
         if ($technology) {
             return response()->json([
-                'success' => true,
-                'result' => $technology
+                'response' => true,
+                'technology' => $technology
             ]);
         } else {
             return response()->json([
-                'success' => false,
-                'result' => 'Page not found'
+                'response' => false,
+                'technology' => 'Page not found'
             ]);
         }
     }

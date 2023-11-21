@@ -21,13 +21,13 @@ class TypeController extends Controller
         $type = Type::with('posts')->where('id', $id)->first();
         if ($type) {
             return response()->json([
-                'success' => true,
-                'result' => $type
+                'response' => true,
+                'type' => $type
             ]);
         } else {
             return response()->json([
-                'success' => false,
-                'result' => 'Page not found'
+                'response' => false,
+                'type' => 'Page not found'
             ]);
         }
     }
