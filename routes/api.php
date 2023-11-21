@@ -21,5 +21,10 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 Route::get('/projects', [ProjectController::class, 'projects']);
-
 Route::get('/projects/{project:slug}', [ProjectController::class, 'singleProject']);
+
+Route::get('technologies', [TechnologyController::class, 'index']);
+Route::get('technologies/{technology:id}', [TechnologyController::class, 'show']);
+
+Route::get('types', [TypesController::class, 'index']);
+Route::get('types/{type:id}', [CategoryController::class, 'show']);
