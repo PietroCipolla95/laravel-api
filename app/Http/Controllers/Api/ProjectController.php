@@ -11,7 +11,8 @@ class ProjectController extends Controller
     public function projects()
     {
         return response()->json([
-            'projects' => Project::with('technologies', 'type')->paginate(6)
+            'success' => true,
+            'projects' => Project::with('technologies', 'type')->orderByDesc('id')->paginate(6)
         ]);
     }
 
@@ -25,9 +26,9 @@ class ProjectController extends Controller
                 'single_project' => $single_project,
             ]);
         } else {
-            return response()->json()([
+            return response()->json([
                 'response' => false,
-                'single_project' => 'no project found'
+                'single_project' => 'no project found',
             ]);
         }
     }
