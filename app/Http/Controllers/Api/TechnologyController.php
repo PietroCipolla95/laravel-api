@@ -18,7 +18,7 @@ class TechnologyController extends Controller
 
     public function show($id)
     {
-        $technology = Technology::with('posts')->where('id', $id)->first();
+        $technology = Technology::with('projects')->where('id', $id)->first();
         if ($technology) {
             return response()->json([
                 'response' => true,

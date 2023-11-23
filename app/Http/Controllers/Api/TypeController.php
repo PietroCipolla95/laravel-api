@@ -18,7 +18,7 @@ class TypeController extends Controller
 
     public function show($id)
     {
-        $type = Type::with('posts')->where('id', $id)->first();
+        $type = Type::with('projects')->where('id', $id)->first();
         if ($type) {
             return response()->json([
                 'response' => true,
