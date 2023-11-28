@@ -11,6 +11,7 @@
 
         <a href="{{ route('admin.projects.edit', $project->id) }}" class="btn btn-info mx-5">Edit</a>
     </div>
+
     @include('partials.message')
 
 

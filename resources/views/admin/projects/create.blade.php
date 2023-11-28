@@ -6,15 +6,7 @@
             Create new project
         </h2>
 
-        @if ($errors->any())
-            <div class="alert alert-danger">
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
+        @include('partials.error')
 
 
         <form action="{{ route('admin.projects.store') }}" method="post" enctype="multipart/form-data">

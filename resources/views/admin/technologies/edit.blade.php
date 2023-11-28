@@ -1,21 +1,12 @@
 @extends('layouts.admin')
 
 @section('content')
-
     <div class="container">
         <h2 class="fs-2 text-dark my-4">
             Edit <strong class="text-dark">{{ $technology->name }}</strong> technology
         </h2>
 
-        @if ($errors->any())
-            <div class="alert alert-danger">
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
+        @include('partials.error')
 
 
         <form action="{{ route('admin.technologies.update', $technology) }}" method="post" enctype="multipart/form-data">
@@ -41,5 +32,4 @@
 
 
     </div>
-
 @endsection

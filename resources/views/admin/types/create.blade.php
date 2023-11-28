@@ -1,21 +1,12 @@
 @extends('layouts.admin')
 
 @section('content')
-
     <div class="container">
         <h2 class="fs-2 text-dark my-4">
             Create type
         </h2>
 
-        @if ($errors->any())
-            <div class="alert alert-danger">
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
-            </div>
-        @endif
+        @include('partials.error')
 
 
         <form action="{{ route('admin.types.store') }}" method="post" enctype="multipart/form-data">
@@ -39,5 +30,4 @@
 
 
     </div>
-
 @endsection
