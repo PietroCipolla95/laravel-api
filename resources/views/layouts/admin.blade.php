@@ -33,6 +33,7 @@
 
         <main class="d-flex">
 
+            {{-- left bar --}}
             <section id="left_bar" class="min-vh-100 bg-dark border-end border-2 border-dark">
                 {{-- dashboard links wrapper --}}
                 <div class="row">
@@ -100,7 +101,8 @@
             </section>
 
 
-            <section id="content" class="col bg-secondary">
+            {{-- right view --}}
+            <section id="content" class="col bg_main">
                 @yield('content')
             </section>
 

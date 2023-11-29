@@ -9,8 +9,8 @@
         </h2>
         <div class="row justify-content-center">
             <div class="col">
-                <div class="card">
-                    <div class="card-header">{{ __('User Dashboard') }}</div>
+                <div class="card border-0">
+                    <div class="card-header bg-dark text-light">{{ __('User Dashboard') }}</div>
 
                     <div class="card-body">
                         @if (session('status'))
@@ -27,8 +27,8 @@
 
         <div class="row mt-5">
             <div class="col">
-                <div class="card">
-                    <div class="card-header">
+                <div class="card border-0">
+                    <div class="card-header bg-dark text-light">
                         Projects
                     </div>
                     <div class="card-body">
@@ -37,8 +37,8 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card">
-                    <div class="card-header">
+                <div class="card border-0">
+                    <div class="card-header bg-dark text-light">
                         Technologies Counter
                     </div>
                     <div class="card-body">
@@ -47,8 +47,8 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card">
-                    <div class="card-header">
+                <div class="card border-0">
+                    <div class="card-header bg-dark text-light">
                         Types Counter
                     </div>
                     <div class="card-body">

@@ -32,7 +32,7 @@
 
         <main>
             <h1 class="text-center py-5">
-                Welcome App
+                Welcome
             </h1>
 
             @yield('content')
