@@ -39,11 +39,19 @@
                 <div class="row">
                     <div class="col d-flex flex-column justify-content-center p-5">
 
-                        <button class="btn btn-secondary btn-outline-info">
+                        <button class="btn btn-secondary btn-outline-info mb-3">
                             <a href="{{ route('admin.dashboard') }}" class="text-decoration-none fs-5 text-light">
                                 <i class="fa-solid fa-landmark"></i>
                                 <span>
                                     Dashboard
+                                </span>
+                            </a>
+                        </button>
+                        <button class="btn btn-secondary btn-outline-info">
+                            <a href="{{ route('admin.leads.index') }}" class="text-decoration-none fs-5 text-light">
+                                <i class="fa-regular fa-envelope"></i>
+                                <span>
+                                    Messages
                                 </span>
                             </a>
                         </button>

@@ -39,7 +39,7 @@
             <div class="col">
                 <div class="card border-0">
                     <div class="card-header bg-dark text-light">
-                        Technologies Counter
+                        Technologies
                     </div>
                     <div class="card-body">
                         {{ $technologies_counter }}
@@ -49,10 +49,20 @@
             <div class="col">
                 <div class="card border-0">
                     <div class="card-header bg-dark text-light">
-                        Types Counter
+                        Types
                     </div>
                     <div class="card-body">
                         {{ $types_counter }}
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card border-0">
+                    <div class="card-header bg-dark text-light">
+                        Messages
+                    </div>
+                    <div class="card-body">
+                        {{ $leads_counter }}
                     </div>
                 </div>
             </div>

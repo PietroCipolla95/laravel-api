@@ -1,12 +1,11 @@
 <?php
 
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\LeadController;
 use App\Http\Controllers\Admin\ProjectController;
 use App\Http\Controllers\Admin\TypeController;
 use App\Http\Controllers\Admin\TechnologyController;
-use App\Models\Lead;
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\Api\LeadController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,9 +19,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
 Route::get('/', function () {
     return to_route('admin.dashboard');
 });
+
 
 Route::middleware(['auth', 'verified'])->name('admin.')->prefix('admin')->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
@@ -32,6 +34,8 @@ Route::middleware(['auth', 'verified'])->name('admin.')->prefix('admin')->group(
     Route::resource('types', TypeController::class);
 
     Route::resource('technologies', TechnologyController::class);
+
+    Route::resource('leads', LeadController::class);
 });
 
 Route::middleware('auth')->group(function () {
