@@ -30,9 +30,7 @@ class LeadController extends Controller
 
         $lead = Lead::create($request->all());
 
-        Mail::to('admin@mailtrap.io')->send(new NewLeadEmailMd($lead));
-
-        // Mail::to($lead->email)->send(new NewLeadEmail($lead)); confirmation email todo
+        Mail::to('pietro.cipolla.95@gmail.com')->send(new NewLeadEmailMd($lead));
 
         return response()->json([
             'success' => true,

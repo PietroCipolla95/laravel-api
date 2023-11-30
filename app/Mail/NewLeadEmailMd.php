@@ -19,9 +19,9 @@ class NewLeadEmailMd extends Mailable
     /**
      * Create a new message instance.
      */
-    public function __construct($_lead)
+    public function __construct($lead)
     {
-        $this->lead = $_lead;
+        $this->lead = $lead;
     }
 
     /**
@@ -42,7 +42,7 @@ class NewLeadEmailMd extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'mail.new-lead-email-md',
+            markdown: 'mail.new-lead-email-md',
         );
     }
 

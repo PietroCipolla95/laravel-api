@@ -1,17 +1,14 @@
 <x-mail::message>
+    # New Lead Message
 
-    # New Message from: {{ $lead->email }}
+    From: {{ $lead->name }}
 
-    Name: {{ $lead->name }}
+    Email: {{ $lead->email }}
 
-    Phone number: {{ $lead->phone }}
+    Phone: {{ $lead->phone }}
 
     Message:
 
     {{ $lead->message }}
-
-    Thanks,
-
-    {{ config('app.name') }}
 
 </x-mail::message>
