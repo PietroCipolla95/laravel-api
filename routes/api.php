@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\ProjectController;
 use App\Http\Controllers\Api\TechnologyController;
 use App\Http\Controllers\Api\TypeController;
-
+use App\Http\Controllers\Api\LeadController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -30,3 +30,5 @@ Route::get('/technologies/{technology:id}', [TechnologyController::class, 'show'
 
 Route::get('/types', [TypeController::class, 'index']);
 Route::get('/types/{type:id}', [TypeController::class, 'show']);
+
+Route::post('/contacts', [LeadController::class, 'store']);
