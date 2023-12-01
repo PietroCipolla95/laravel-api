@@ -39,7 +39,7 @@
                 <div class="row">
                     <div class="col d-flex flex-column justify-content-center p-5">
 
-                        <button class="btn btn-secondary btn-outline-info mb-3">
+                        <button class="my_btn mb-3">
                             <a href="{{ route('admin.dashboard') }}" class="text-decoration-none fs-5 text-light">
                                 <i class="fa-solid fa-landmark"></i>
                                 <span>
@@ -47,7 +47,7 @@
                                 </span>
                             </a>
                         </button>
-                        <button class="btn btn-secondary btn-outline-info">
+                        <button class="my_btn">
                             <a href="{{ route('admin.leads.index') }}" class="text-decoration-none fs-5 text-light">
                                 <i class="fa-regular fa-envelope"></i>
                                 <span>
@@ -55,13 +55,15 @@
                                 </span>
                             </a>
                         </button>
-                        <button class="btn btn-secondary btn-outline-info my-3">
+                        <button class="my_btn my-3">
                             <a href="{{ route('admin.projects.index') }}" class="text-decoration-none fs-5 text-light">
                                 <i class="fa-solid fa-list-check"></i>
-                                Projects
+                                <span>
+                                    Projects
+                                </span>
                             </a>
                         </button>
-                        <button class="btn btn-secondary btn-outline-info">
+                        <button class="my_btn">
                             <a href="{{ route('admin.projects.create') }}" class="text-decoration-none fs-5 text-light">
                                 <i class="fa-solid fa-pen-ruler"></i>
                                 <span>
@@ -69,7 +71,7 @@
                                 </span>
                             </a>
                         </button>
-                        <button class="btn btn-secondary btn-outline-info my-3">
+                        <button class="my_btn my-3">
                             <a href="{{ route('admin.types.index') }}" class="text-decoration-none fs-5 text-light">
                                 <i class="fa-solid fa-screwdriver-wrench"></i>
                                 <span>
@@ -77,7 +79,7 @@
                                 </span>
                             </a>
                         </button>
-                        <button class="btn btn-secondary btn-outline-info">
+                        <button class="my_btn">
                             <a href="{{ route('admin.types.create') }}" class="text-decoration-none fs-5 text-light">
                                 <i class="fa-solid fa-pen-ruler"></i>
                                 <span>
@@ -85,7 +87,7 @@
                                 </span>
                             </a>
                         </button>
-                        <button class="btn btn-secondary btn-outline-info my-3">
+                        <button class="my_btn my-3">
                             <a href="{{ route('admin.technologies.index') }}"
                                 class="text-decoration-none fs-5 text-light">
                                 <i class="fa-solid fa-microchip"></i>
@@ -94,7 +96,7 @@
                                 </span>
                             </a>
                         </button>
-                        <button class="btn btn-secondary btn-outline-info">
+                        <button class="my_btn">
                             <a href="{{ route('admin.technologies.create') }}"
                                 class="text-decoration-none fs-5 text-light">
                                 <i class="fa-solid fa-pen-ruler"></i>

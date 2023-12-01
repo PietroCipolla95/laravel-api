@@ -21,7 +21,7 @@
             </div>
 
             {{-- submit button --}}
-            <button type="submit" class="btn btn-primary">
+            <button type="submit" class="my_btn">
                 Create
             </button>
 

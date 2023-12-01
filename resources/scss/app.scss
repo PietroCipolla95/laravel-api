@@ -1,5 +1,54 @@
 @import '~bootstrap/scss/bootstrap';
 
 .bg_main {
-    background-color: lightcoral;
+    background-color: rgb(132, 102, 167);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.my_color {
+    color: #CC2680;
+}
+
+.my_border_bottom {
+    background: rgb(228, 36, 125);
+    background: -moz-linear-gradient(324deg, rgba(228, 36, 125, 1) 29%, rgba(126, 44, 141, 1) 70%);
+    background: -webkit-linear-gradient(324deg, rgba(228, 36, 125, 1) 29%, rgba(126, 44, 141, 1) 70%);
+    background: linear-gradient(324deg, rgba(228, 36, 125, 1) 29%, rgba(126, 44, 141, 1) 70%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e4247d", endColorstr="#7e2c8d", GradientType=1);
+    height: 2px;
+}
+
+.my_border {
+    border-left: 5px solid #CC2680;
+}
+
+.my_bg {
+    background-color: #CC2680;
+}
+
+.my_btn {
+    color: black;
+    border: 1px solid #CC2680;
+    padding: 0.5rem .75rem;
+    background-color: #CC2680;
+    border-radius: 10px;
+
+    &:hover {
+        color: #CC2680;
+        background-color: black;
+
+        span,
+        i {
+            color: #CC2680;
+        }
+    }
+
+    span,
+    i {
+        color: black;
+    }
+
 }

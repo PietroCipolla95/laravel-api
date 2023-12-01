@@ -6,7 +6,7 @@
                 <!-- Left Side Of Navbar -->
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item navbar-brand">
-                        <a class="nav-link text-info fs-3" href="{{ url('/') }}">{{ __('Dashboard') }}</a>
+                        <a class="nav-link fs-3 my_color" href="{{ url('/') }}">{{ __('Dashboard') }}</a>
                     </li>
                 </ul>
 
@@ -24,7 +24,7 @@
                         @endif --}}
                     @else
                         <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle text-info" href="#" role="button"
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle my_color" href="#" role="button"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ Auth::user()->name }}
                             </a>

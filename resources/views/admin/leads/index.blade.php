@@ -2,13 +2,13 @@
 
 @section('content')
     <div class="container">
-        <h1>
+        <h1 class="mt-3">
             Messages
         </h1>
 
         @include('partials.message')
 
-        <div class="table-responsive my-4">
+        <div class="table-responsive my-4 rounded-3">
             <table class="table border table-striped table-hover table-light">
                 <thead>
                     <tr>
